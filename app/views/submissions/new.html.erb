@@ -1,18 +1,23 @@
 <div class="instructions">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-8 col-lg-offset-4">
         <h3>Submissions to the PHAS Symposium 2015</h3>
         <ul>
-          <li>Please include your full name, as you would want it printed in the program</li>
-          <li>A confirmation email will be sent to the email you provide</li>
-          <li>100 character limit for the title</li>
-          <li>600 character limit for the abstract</li>
-          <li>Please note any dietary restrictions you may have</li>
+          <li>Please include your full name, as you would want it printed in the program.</li>
+          <li>A confirmation email will be sent to the email you provide.</li>
+          <li>A 200 character limit for the title.</li>
+          <li>A 1000 character limit for the abstract. It may include LaTeX.</li>
+          <li>Please note any dietary restrictions you may have.</li>
       </div>
     </div>
   </div>
 </div>
+<hr/>
+
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, class: "bg-danger" %>
+<% end %>
 
 <div class="content-section-a">
   <div class="container">
@@ -71,7 +76,7 @@
 
         <div class='form-group'>
           <div class="col-sm-offset-2 col-sm-10">
-            <%= f.submit 'Submit', class: 'btn btn-default' %>
+            <%= f.submit 'Submit', class: 'btn btn-primary' %>
           </div>
         </div>
       <% end %>

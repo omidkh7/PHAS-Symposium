@@ -13,9 +13,11 @@ class SubmissionsController < ApplicationController
     @submission = Submission.new(submission_params)
 
     if @submission.save
-      render 'index'
+      flash.keep[:success] = "Thank you for submitting your abstract."
+      #send mailer
+      redirect_to submissions_url
     else
-      flash.now[:error] = @submission.errors.full_messages
+      flash.now[:error] = @submission.errors.full_messages.to_sentence
       render 'new'
     end
   end

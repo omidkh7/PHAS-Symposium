@@ -14,7 +14,7 @@ class SubmissionsController < ApplicationController
 
     if @submission.save
       flash.keep[:success] = "Thank you for submitting your abstract."
-      #send mailer
+      SubmissionMailer.confirmation_email(@submission).deliver_later
       redirect_to submissions_url
     else
       flash.now[:error] = @submission.errors.full_messages.to_sentence

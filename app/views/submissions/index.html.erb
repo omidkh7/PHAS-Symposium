@@ -1,0 +1,31 @@
+<div class="intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-message">
+          <%= image_tag('ucalgary-logo.jpg', height: '200') %>
+          <h1>PHAS Symposium</h1>
+          <h3>November 12, 2015</h3>
+          <h3>Abstract Submission</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section-a">
+  <div class="container">
+    <div class="row">
+      <h2>Oral Presentations</h2>
+      <% @oral_presentations.each do |oral_presentation| %>
+        <%= render 'presentation', presentation: oral_presentation %>
+      <% end %>
+
+      <h2>Poster Presentations</h2>
+      <% @poster_presentations.each do |poster_presentation| %>
+        <%= render 'presentation', presentation: poster_presentation %>
+      <% end %>
+    </div>
+  </div>
+</div>
+

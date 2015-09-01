@@ -13,9 +13,9 @@ class SubmissionsController < ApplicationController
     @submission = Submission.new(submission_params)
 
     if @submission.save
-      flash.keep[:success] = "Thank you for submitting your abstract."
+      flash.keep[:success] = "Thank you for submission."
       SubmissionMailer.confirmation_email(@submission).deliver_later
-      redirect_to submissions_url
+      redirect_to root_url 
     else
       flash.now[:error] = @submission.errors.full_messages.to_sentence
       render 'new'

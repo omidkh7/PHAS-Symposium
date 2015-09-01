@@ -25,7 +25,7 @@ class Submission < ActiveRecord::Base
   validates :presentation_type, presence: true, inclusion: PRESENTATION_TYPES
   validates :attender_type, presence: true, inclusion: ATTENDER_TYPES, unless: "presentation_type == 'attender'"
   validates :sub_department, presence: true, unless: "presentation_type == 'attender'"
-  validates :will_attend_social_event, presence: true, inclusion: { in: [true, false] }
+  #validates :will_attend_social_event, presence: true, inclusion: { in: [true, false] }
 
   scope :orals, -> { where(presentation_type: 'oral') }
   scope :posters, -> { where(presentation_type: 'poster') }

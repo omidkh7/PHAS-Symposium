@@ -2,7 +2,7 @@ Hi <%= @submission.name %>,
 
 Thank you for registering for the PHAS Symposium 2015. We have recorded the following information.
 
-<% if @submission.presentation_type == "attender" %>
+<% if @submission.presentation_type != "attender" %>
   Title:
   <%= @submission.title %>
 
@@ -15,4 +15,6 @@ Thank you for registering for the PHAS Symposium 2015. We have recorded the foll
 A detailed schedule will be provided closer to the date of the symposium.
 
 If you have any questions or concerns please contact fmivehva@ucalgary.ca, or erwatt@ucalgary.ca.
+
+Thank you.
 

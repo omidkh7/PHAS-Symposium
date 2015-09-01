@@ -10,7 +10,7 @@
     <p>
       Thank you for registering for the PHAS Symposium 2015. We have recorded the following information.
     </p>
-    <% if @submission.presentation_type == "attender" %>
+    <% if @submission.presentation_type != "attender" %>
       <p>
         Title:
         <br/>
@@ -33,6 +33,10 @@
 
     <p>
       If you have any questions or concerns please contact <%= link_to 'Farokh (fmivehva@ucalgary.ca)', 'mailto:fmivehva@ucalgary.ca' %>, or <%= link_to 'Elizabeth (erwatt@ucalgary.ca)', 'mailto:erwatt@ucalgary.ca' %>
+    </p>
+
+    <p>
+      Thank you.
     </p>
   </body>
 </html>

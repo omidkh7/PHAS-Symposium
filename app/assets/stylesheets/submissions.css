@@ -88,6 +88,10 @@ h3 {
   padding-top: 5%;
 }
 
+label.required:after {
+  content: '*';
+}
+
 textarea#submission_abstract {
   height: 200px;
 }

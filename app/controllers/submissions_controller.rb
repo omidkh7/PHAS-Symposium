@@ -25,7 +25,7 @@ class SubmissionsController < ApplicationController
   private
 
   def submission_params
-    params.require(:submission).permit(:name, :email, :title, :abstract, :presentation_type, :dietary_restrictions)
+    params.require(:submission).permit(:name, :email, :title, :abstract, :presentation_type, :dietary_restrictions, :attender_type, :sub_department, :will_attend_social_event)
   end
 
 end

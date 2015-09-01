@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :submissions
+  resources :submissions, only: [:new, :create]
 
-  root 'submissions#index'
+  root 'submissions#new'
 end

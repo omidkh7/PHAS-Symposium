@@ -10,16 +10,22 @@
     <p>
       Thank you for registering for the PHAS Symposium 2015. We have recorded the following information.
     </p>
-    <p>
-      Title:
-      <br/>
-      <%= @submission.title %>
-    </p>
-    <p>
-      Abstract:
-      <br/>
-      <%= @submission.abstract %>
-    </p>
+    <% if @submission.presentation_type == "attender" %>
+      <p>
+        Title:
+        <br/>
+        <%= @submission.title %>
+      </p>
+      <p>
+        Abstract:
+        <br/>
+        <%= @submission.abstract %>
+      </p>
+    <% else %>
+      <p>
+        You will be attending, but not presenting.
+      </p>
+    <% end%>
     <p>
       If you have any questions or concerns please contact a DGA member.
     </p>

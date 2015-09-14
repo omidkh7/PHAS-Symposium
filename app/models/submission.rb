@@ -9,6 +9,7 @@
 #  abstract             :text
 #  presentation_type    :string
 #  dietary_restrictions :text
+#  co_authors           :string
 #  created_at           :datetime         not null
 #  updated_at           :datetime         not null
 #

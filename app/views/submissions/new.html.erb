@@ -28,7 +28,7 @@
         </p>
 
         <p>
-          Abstract submission is now open and the <strong>deadline is October 9, 2015</strong>. To submit your abstract, please fill out the form below. 
+          Abstract submission is now open and the <strong>deadline is October 9, 2015</strong>. To submit your abstract, please fill out the form below.
         </p>
 
         <p>
@@ -100,21 +100,25 @@
             <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
           </div>
         </div>
-        
+
         <div class='form-group'>
           <%= f.label :attender_type, class: 'col-sm-2 control-label required' %>
           <div class="col-sm-10">
             <label class="checkbox-inline">
-              <%= f.radio_button(:attender_type, "msc", checked: true) %>
-              MSc 
+              <%= f.radio_button(:attender_type, "undergrad", checked: true) %>
+              Undergraduate
+            </label>
+            <label class="checkbox-inline">
+              <%= f.radio_button(:attender_type, "msc") %>
+              MSc
             </label>
             <label class="checkbox-inline">
               <%= f.radio_button(:attender_type, "phd") %>
-              PhD 
+              PhD
             </label>
             <label class="checkbox-inline">
               <%= f.radio_button(:attender_type, "postdoc") %>
-              Postdoctoral Fellow 
+              Postdoctoral Fellow
             </label>
           </div>
         </div>

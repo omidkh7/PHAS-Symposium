@@ -17,7 +17,7 @@
 class Submission < ActiveRecord::Base
 
   PRESENTATION_TYPES = %w[oral poster attender].freeze
-  ATTENDER_TYPES = %w[msc phd postdoc].freeze
+  ATTENDER_TYPES = %w[undergrad msc phd postdoc].freeze
 
   validates :name, presence: true
   validates :email, presence: true, format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/i }, uniqueness: true

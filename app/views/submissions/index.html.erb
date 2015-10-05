@@ -22,13 +22,21 @@
   <div class="container">
     <div class="row">
       <h2 class="section-title">Oral Presentations</h2>
-      <% @oral_presentations.each do |oral_presentation| %>
-        <%= render 'presentation', presentation: oral_presentation %>
+      <% if @oral_presentations.any? %>
+        <% @oral_presentations.each do |oral_presentation| %>
+          <%= render 'presentation', presentation: oral_presentation %>
+        <% end %>
+      <% else %>
+        <p>No oral presentation submissions yet.</p>
       <% end %>
 
       <h2 class="section-title">Poster Presentations</h2>
-      <% @poster_presentations.each do |poster_presentation| %>
-        <%= render 'presentation', presentation: poster_presentation %>
+      <% if @poster_presentations.any? %>
+        <% @poster_presentations.each do |poster_presentation| %>
+          <%= render 'presentation', presentation: poster_presentation %>
+        <% end %>
+      <% else %>
+        <p>No poster presentation submissions yet.</p>
       <% end %>
     </div>
   </div>

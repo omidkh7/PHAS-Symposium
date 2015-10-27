@@ -1,4 +1,4 @@
-<p class="presentation_title"><%= presentation.title %></p>
-<p class="presentation_presenter"><%= presentation.name %></p>
+<p class="presentation_title"><%= "#{presentation.id}. #{presentation.title}" %></p>
+<p class="presentation_presenter"><%= "#{presentation.name}, #{presentation.attender_type}, #{presentation.sub_department}" %></p>
 <p class="presentation_presenter"><%= presentation.abstract %></p>
 <hr/>

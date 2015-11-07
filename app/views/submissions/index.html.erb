@@ -6,7 +6,7 @@
           <%= image_tag('ucalgary-logo.jpg', height: '200') %>
           <h1>PHAS Symposium</h1>
           <h3>November 12, 2015</h3>
-          <h3>Call For Abstracts</h3>
+          <h3>Schedule</h3>
           <hr class="intro-divder"/>
         </div>
       </div>
@@ -14,30 +14,103 @@
   </div>
 </div>
 
-<% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, class: "bg-success" %>
-<% end %>
-
 <div class="content-section-a">
-  <div class="container">
-    <div class="row">
-      <h2 class="section-title">Oral Presentations</h2>
-      <% if @oral_presentations.any? %>
-        <% @oral_presentations.each do |oral_presentation| %>
-          <%= render 'presentation', presentation: oral_presentation %>
-        <% end %>
-      <% else %>
-        <p>No oral presentation submissions yet.</p>
-      <% end %>
-
-      <h2 class="section-title">Poster Presentations</h2>
-      <% if @poster_presentations.any? %>
-        <% @poster_presentations.each do |poster_presentation| %>
-          <%= render 'presentation', presentation: poster_presentation %>
-        <% end %>
-      <% else %>
-        <p>No poster presentation submissions yet.</p>
-      <% end %>
+  <div class="col-lg-6 col-lg-offset-3">
+    <div class="row section">
+      <h3>Registration</h3>
+      <div class="presentation">
+        <div>&nbsp;9:30 am – &nbsp;9:55 am: Registration and Coffee</div>
+      </div>
+      <div class="presentation">
+        <div>&nbsp;9:55 am – 10:00 am: Opening of the Symposium</div>
+      </div>
+    </div>
+    <div class="row section">
+      <h3>Session 1</h3>
+      <div class="presentation">
+        <div>10:00 am – 10:15 am: Joydip Ghosh</div>
+      </div>
+      <div class="presentation">
+        <div>10:15 am – 10:30 am: Mark Bryant</div>
+      </div>
+      <div class="presentation">
+        <div>10:30 am – 10:45 am: Hamidreza Kaviani</div>
+      </div>
+      <div class="presentation">
+        <div>10:45 am – 11:00 am: Russell Shanahan</div>
+      </div>
+      <div class="presentation">
+        <div>11:00 am – 11:15 am: Weiwei Zhang</div>
+      </div>
+      <div class="presentation">
+        <div>11:15 am – 11:30 am: Farokh Mivehvar</div>
+      </div>
+      <div class="presentation">
+        <div>11:30 am – 11:45 am: Amir Ouyed</div>
+      </div>
+      <div class="presentation">
+        <div>11:45 am – 12:00 pm: Emily Hubley</div>
+      </div>
+    </div>
+    <div class="row section">
+      <h3>Lunch & Poster Session</h3>
+      <div class="presentation">
+        <div>12:00 pm – 1:00 pm: Logan Cooke, Aki hiko Fujii, Svetlana Kuznetsova, Yadong Wu, Marcelo Wu</div>
+      </div>
+    </div>
+    <div class="row section">
+      <h3>Session 2</h3>
+      <div class="presentation">
+        <div>1:00 pm – 1:15 pm: Chetan Deshmukh</div>
+      </div>
+      <div class="presentation">
+        <div>1:15 pm – 1:30 pm: Parisa Zarkeshian</div>
+      </div>
+      <div class="presentation">
+        <div>1:30 pm – 1:45 pm: Mehrnoosh Tahani</div>
+      </div>
+      <div class="presentation">
+        <div>1:45 pm – 2:00 pm: J. P. Hadden</div>
+      </div>
+      <div class="presentation">
+        <div>2:00 pm – 2:15 pm: Ish Dhand</div>
+      </div>
+      <div class="presentation">
+        <div>2:15 pm – 2:30 pm: Anna Ordog</div>
+      </div>
+      <div class="presentation">
+        <div>2:30 pm – 2:45 pm: Jonathan Johannes</div>
+      </div>
+    </div>
+    <div class="row section">
+      <h3>Coffee Break</h3>
+      <div class="presentation">
+        <div>2:45 pm – 3:15 pm: Coffee Break</div>
+      </div>
+    </div>
+    <div class="row section">
+      <h3>Session 2</h3>
+      <div class="presentation">
+        <div>3:15 pm – 3:30 pm: Davor Curic</div>
+      </div>
+      <div class="presentation">
+        <div>3:30 pm – 3:45 pm: Mohammadsadegh Khazali</div>
+      </div>
+      <div class="presentation">
+        <div>3:45 pm – 4:00 pm: Zahra Hosseini</div>
+      </div>
+      <div class="presentation">
+        <div>4:00 pm – 4:15 pm: Marcel.li Grimau Puigibert</div>
+      </div>
+      <div class="presentation">
+        <div>4:15 pm – 4:30 pm: Alireza Poostindouz</div>
+      </div>
+      <div class="presentation">
+        <div>4:30 pm – 4:45 pm: Hon Wai Lau</div>
+      </div>
+      <div class="presentation">
+        <div>4:45 pm – 5:00 pm: Raju Valivarthi</div>
+      </div>
     </div>
   </div>
 </div>

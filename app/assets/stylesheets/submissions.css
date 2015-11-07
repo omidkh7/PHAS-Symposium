@@ -28,7 +28,6 @@ h3 {
 
 .intro-message {
   position: relative;
-  padding-top: 10%;
 }
 
 .intro-message > h1 {
@@ -102,5 +101,15 @@ footer {
 
 p.copyright {
   margin: 15px 0 0;
+}
+
+.section > h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.section {
+  padding: 20px;
+  border-bottom: 1px solid #636363;
 }
 

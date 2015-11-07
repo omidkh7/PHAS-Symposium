@@ -1,11 +1,16 @@
 var submission = (function($) {
 
   var init = function() {
+    initSelectOnlyAttender();
     initToggleStates();
     initRequirementToggle();
   };
 
   /* private */
+
+  var initSelectOnlyAttender = function() {
+    $('#submission_presentation_type_attender').click();
+  };
 
   var initRequirementToggle = function() {
     $('input[name="submission[presentation_type]"]').change(function() {

@@ -4,7 +4,7 @@ class SubmissionsController < ApplicationController
 
   def index
     if Rails.env == 'production'
-      @oral_presentations = Submission.find(ORAL_PRESENTATION_ORDERED_IDS, order: "field(id, #{ORAL_PRESENTATION_ORDERED_IDS.join(',')})")
+      @oral_presentations = ORAL_PRESENTATION_ORDERED_IDS.collect { |id| Submission.find(id) }
     else
       @oral_presentations = Submission.orals
     end

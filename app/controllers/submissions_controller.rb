@@ -1,8 +1,9 @@
 class SubmissionsController < ApplicationController 
 
+  ORAL_PRESENTATION_ORDERED_IDS = [5, 11, 12, 16, 27, 8, 22, 20, 4, 28, 26, 13, 2, 18, 15, 23, 1, 14, 32, 29, 30, 31].freeze
+
   def index
     if Rails.env == 'production'
-      ORAL_PRESENTATION_ORDERED_IDS = [5, 11, 12, 16, 27, 8, 22, 20, 4, 28, 26, 13, 2, 18, 15, 23, 1, 14, 32, 29, 30, 31]
       @oral_presentations = Submission.find(ORAL_PRESENTATION_ORDERED_IDS, order: "field(id, #{ORAL_PRESENTATION_ORDERED_IDS.join(',')})")
     else
       @oral_presentations = Submission.orals

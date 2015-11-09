@@ -113,3 +113,7 @@ p.copyright {
   border-bottom: 1px solid #636363;
 }
 
+.section > .chair{
+  text-align: center;
+  padding-bottom: 10px;
+}

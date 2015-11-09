@@ -1,4 +1,5 @@
-<p class="presentation_title"><%= "#{presentation.id}. #{presentation.title}" %></p>
-<p class="presentation_presenter"><%= "#{presentation.name}, #{presentation.attender_type}, #{presentation.sub_department}" %></p>
-<p class="presentation_presenter"><%= presentation.abstract %></p>
+<p class="presentation_title"><%= "#{presentation.title}" %></p>
+<p class="presentation_authors"><span class="presenter"><%= presentation.name %></span><%= ", #{presentation.co_authors}" if presentation.co_authors.present? %></p>
+<p class="presentation_department"><%= presentation.sub_department %></p>
+<p class="presentation_abstract"><%= presentation.abstract %></p>
 <hr/>

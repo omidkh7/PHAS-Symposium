@@ -115,6 +115,18 @@
         <div>4:45 pm – 5:00 pm: Raju Valivarthi</div>
       </div>
     </div>
+    <div class="row section">
+      <h3>Presentation Abstracts</h3>
+      <% @oral_presentations.each do |oral_presentation| %>
+        <%= render 'presentation', presentation: oral_presentation %>
+        <% end %>
+    </div>
+    <div class="row section">
+      <h3>Poster Abstracts</h3>
+      <% @poster_presentations.each do |oral_presentation| %>
+        <%= render 'presentation', presentation: oral_presentation %>
+      <% end %>
+    </div>
   </div>
 </div>
 

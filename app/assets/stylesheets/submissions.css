@@ -80,7 +80,12 @@ h3 {
 }
 
 .presentation_title {
+  text-align: center;
   font-size: 1.3em;
+}
+
+.presentation_authors > .presenter {
+  font-weight: bold;
 }
 
 .instructions {

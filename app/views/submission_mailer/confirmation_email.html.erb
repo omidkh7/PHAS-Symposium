@@ -27,6 +27,21 @@
       </p>
     <% end%>
 
+    <% if @submission.attender_type != "undergrad" %>
+      <p>
+        Please submit the $5 registration fee to one of the following people:
+       <ul>
+         <li>Abdullah Khalid (SB306)</li>
+         <li>Anna Ordog (SB 628C)</li>
+         <li>Elizabeth Watt (TBCC CCB17)</li>
+         <li>Mehrnoosh Tahani (SB 512)</li>
+       <ul>
+    <% else %>
+      <p>
+        You are an undergraduate. Your registration is free.
+      </p>
+    <% end %>
+
     <p>
       A detailed schedule will be provided closer to the date of the symposium.
     </p>

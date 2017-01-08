@@ -1,6 +1,6 @@
 Hi <%= @submission.name %>,
 
-Thank you for registering for the PHAS Symposium 2015. We have recorded the following information.
+Thank you for registering for the PHAS Symposium 2017. We have recorded the following information.
 
 <% if @submission.presentation_type != "attender" %>
   Title:
@@ -12,9 +12,19 @@ Thank you for registering for the PHAS Symposium 2015. We have recorded the foll
   You will be attending, but not presenting.
 <% end %>
 
+<% if @submission.attender_type != "undergrad" %>
+   Please submit the $5 registration fee to one of the following people:
+    Abdullah Khalid (SB306)
+    Anna Ordog (SB 628C)
+    Elizabeth Watt (TBCC CCB17)
+    Mehrnoosh Tahani (SB 512)
+<% else %>
+   You are an undergraduate. Your registration is free.
+<% end %>
+
 A detailed schedule will be provided closer to the date of the symposium.
 
-If you have any questions or concerns please contact Farokh (f.mivehvar@ucalgary.ca), or Elizabeth (erwatt@ucalgary.ca).
+If you have any questions or concerns please contact Anna (aordog@ucalgary.ca), or Elizabeth (erwatt@ucalgary.ca).
 
 Thank you.
 

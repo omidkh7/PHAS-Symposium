@@ -4,8 +4,8 @@
       <div class="col-lg-12">
         <div class="intro-message">
           <%= image_tag('ucalgary-logo.jpg', height: '200') %>
-          <h1>The First PHAS Symposium</h1>
-          <h3>November 12, 2015</h3>
+          <h1>The Second PHAS Symposium</h1>
+          <h3>February 22, 2017</h3>
           <hr class="intro-divder"/>
         </div>
       </div>
@@ -18,21 +18,14 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
         <p>
-          It is a pleasure to invite you to the <strong>First PHAS Symposium</strong>.
-          The conference is organized by the PHAS graduate students and postdoctoral research fellows and will take place at the main campus, in <strong>SB 142 and SB 148, of the University of Calgary</strong> on November 12, 2015.
+          It is a pleasure to invite you to the Second Annual PHAS Symposium. The conference is organized by the PHAS Departmental Graduate Association and will take place at <strong>SB146 and SB148</strong> on the main campus of the University of Calgary on  <strong>February 22, 2017</strong>.
         </p>
         <p>
-          The purpose of the PHAS Symposium is to bring upper-level undergraduate students, graduate students and postdoctoral research fellows from various research areas and groups together.
-          All PHAS gradate students and postdoctoral research fellows are welcome and encouraged to submit an abstract for an oral and/or a poster presentation.
-          There is no registration fee. Furthermore, refreshment and lunch will be provided.
+           The purpose of the PHAS Symposium is to bring together researchers from all PHAS groups to share their ongoing research. All PHAS graduate and undergraduate students and postdoctoral research fellows are welcome and encouraged to submit an abstract for an oral and/or a poster presentation. There is a $5 registration fee for graduate students, postdoctoral research fellows and faculty members. Lunch and coffee/refreshments will be provided, and there will be a social event in the evening at the Last Defence Lounge. Prizes will be given out for best talks and posters!
         </p>
 
         <p>
-          Abstract submission is now closed but you are able to register as an attender if you would still like to participate.
-        </p>
-
-        <p>
-          We look forward to seeing you all at the First PHAS Symposium.
+          We look forward to seeing you all at the Second Annual PHAS Symposium!
         </p>
 
         <p>
@@ -43,15 +36,11 @@
           <br/>
           The Organizing Committee (in alphabetical order):
           <br/>
-          Jonny Johannes
-          <br/>
-          Behzad Khanaliloo
-          <br/>
-          Farokh Mivehvar
+          Abdullah Khalid
           <br/>
           Anna Ordog
           <br/>
-          Lucile Veissier
+          Mehrnoosh Tahani
           <br/>
           Elizabeth Watt
         </p>
@@ -73,11 +62,11 @@
           <%= f.label :presentation_type, class: 'col-sm-2 control-label required' %>
           <div class="col-sm-10">
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "oral", disabled: true) %>
+              <%= f.radio_button(:presentation_type, "oral", disabled: false) %>
               oral
             </label>
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "poster", disabled: true) %>
+              <%= f.radio_button(:presentation_type, "poster", disabled: false) %>
               poster
             </label>
             <label class="checkbox-inline">
@@ -144,14 +133,14 @@
         <div class='form-group'>
           <%= f.label :title, class: 'col-sm-2 control-label required togglable' %>
           <div class="col-sm-10">
-            <%= f.text_field :title, class: 'form-control togglable', placeholder: 'Title (200 character limit)' %>
+            <%= f.text_field :title, class: 'form-control togglable', placeholder: 'Title (250 character limit)' %>
           </div>
         </div>
 
         <div class='form-group'>
           <%= f.label :abstract, class: 'col-sm-2 control-label required togglable' %>
           <div class="col-sm-10">
-            <%= f.text_area :abstract, class: 'form-control togglable', placeholder: 'Abstract (1000 character limit)' %>
+            <%= f.text_area :abstract, class: 'form-control togglable', placeholder: 'Abstract (2000 character limit)' %>
           </div>
         </div>
 
@@ -165,7 +154,7 @@
         </div>
 
         <div class='form-group'>
-          <%= f.label :will_attend_social_event, 'Would you be interested in participating in a post-symposium social event?', class: 'col-sm-6 control-label' %>
+          <%= f.label :will_attend_social_event, 'Do you plan to attend the social event?', class: 'col-sm-6 control-label' %>
           <div class="col-sm-6">
             <label class="checkbox-inline">
               <%= f.radio_button(:will_attend_social_event, 'true', checked: true) %>
@@ -178,8 +167,13 @@
           </div>
         </div>
 
-        <br/>
-        <br/>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">         
+        <p>
+          Details about submitting the registration fee will be emailed to you.
+        </p>
+      </div>
+    </div>
         <br/>
 
         <div class='form-group'>
@@ -196,7 +190,7 @@
 <hr/>
 <div class="container">
   <div class="row">
-    <p>Please contact <%= link_to "jonny.p.johannes@ucalgary.ca", "mailto:jonny.p.johannes@ucalgary.ca" %> if you have any questions about the form.</p>
+    <p>Please contact <%= link_to "akhali@ucalgary.ca", "mailto:akhali@ucalgary.ca" %> if you have any questions about the form.</p>
   </div>
 </div>
 

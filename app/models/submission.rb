@@ -20,7 +20,7 @@ class Submission < ActiveRecord::Base
   ATTENDER_TYPES = %w[undergrad msc phd postdoc faculty].freeze
 
   validates :name, presence: true
-  validates :email, presence: true, format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/i }, uniqueness: true
+  validates :email, presence: true, format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/i }, uniqueness: false
   validates :title, presence: true, length: { maximum: 250 }, unless: "presentation_type == 'attender'"
   validates :abstract, presence: true, length: { maximum: 2000 }, unless: "presentation_type == 'attender'"
   validates :presentation_type, presence: true, inclusion: PRESENTATION_TYPES

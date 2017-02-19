@@ -3,16 +3,14 @@ class SubmissionsController < ApplicationController
   ORAL_PRESENTATION_ORDERED_IDS = [101, 81, 80, 76, 93, 95, 106, 87, 65, 99, 91, 89, 102, 92, 105, 94].freeze
 
   def index
-    if Settings.show_schedule
-      if Rails.env == 'production'
-        @oral_presentations = ORAL_PRESENTATION_ORDERED_IDS.collect { |id| Submission.find(id) }
-      else
-        @oral_presentations = Submission.orals
-      end
-      @poster_presentations = Submission.posters
-    else
-      render 'index'
+    begin
+      @oral_presentations = ORAL_PRESENTATION_ORDERED_IDS.collect { |id| Submission.find(id) }
+    rescue
+      @oral_presentations = Submission.orals
     end
+
+    @poster_presentations = Submission.posters
+    render 'index'
   end
 
   def new

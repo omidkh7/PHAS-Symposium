@@ -70,7 +70,7 @@
           <%= f.label :presentation_type, class: 'col-sm-2 control-label required' %>
           <div class="col-sm-10">
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "oral", disabled: false) %>
+              <%= f.radio_button(:presentation_type, "oral", checked: true, disabled: false) %>
               oral
             </label>
             <label class="checkbox-inline">
@@ -78,7 +78,7 @@
               poster
             </label>
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "attender") %>
+              <%= f.radio_button(:presentation_type, "attender", disabled: false) %>
               attender
             </label>
           </div>
@@ -162,8 +162,8 @@
         </div>
 
         <div class='form-group'>
-          <%= f.label :will_attend_social_event, 'Do you plan to attend the social event?', class: 'col-sm-6 control-label' %>
-          <div class="col-sm-6">
+          <%= f.label :will_attend_social_event, 'Do you plan to attend the social event?', class: 'col-sm-2 control-label' %>
+          <div class="col-sm-10">
             <label class="checkbox-inline">
               <%= f.radio_button(:will_attend_social_event, 'true', checked: true) %>
               Yes

@@ -4,8 +4,8 @@
       <div class="col-lg-12">
         <div class="intro-message">
           <%= image_tag('ucalgary-logo.jpg', height: '200') %>
-          <h1>The Second Annual PHAS Symposium</h1>
-          <h3>February 22, 2017</h3>
+          <h1>The Third Annual PHAS Symposium</h1>
+          <h3>February 21, 2018</h3>
           <hr class="intro-divder"/>
         </div>
       </div>
@@ -18,14 +18,14 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
         <p>
-          It is a pleasure to invite you to the Second Annual PHAS Symposium. The conference is organized by the PHAS Departmental Graduate Association and will take place at <strong>SB146 and SB148</strong> on the main campus of the University of Calgary on  <strong>February 22, 2017</strong>.
+          It is a pleasure to invite you to the Third Annual PHAS Symposium. The conference is organized by the PHAS Departmental Graduate Association and will take place at <strong>SB142 and SB144</strong> on the main campus of the University of Calgary on  <strong>February 21, 2018</strong>.
         </p>
         <p>
-           The purpose of the PHAS Symposium is to bring together researchers from all PHAS groups to share their ongoing research. All PHAS graduate and undergraduate students and postdoctoral research fellows are welcome and encouraged to submit an abstract for an oral and/or a poster presentation. There is a $5 registration fee for graduate students, postdoctoral research fellows and faculty members. Lunch and coffee/refreshments will be provided, and there will be a social event in the evening at the Last Defence Lounge. Prizes will be given out for best talks and posters!
+           The purpose of the PHAS Symposium is to bring together researchers from all PHAS groups to share their ongoing research. All PHAS graduate and undergraduate students and postdoctoral research fellows are welcome and encouraged to submit an abstract for an oral and/or a poster presentation. There is a $5 registration fee for both attendees and presenters. Lunch and coffee/refreshments will be provided, and there will be a social event in the evening at the Last Defence Lounge. Prizes will be given out for best talks and posters!
         </p>
 
         <p>
-           Abstract submission is now closed. You may still register to attend.
+           <strong>Abstract submission is now open!</strong>
         </p> 
 
         <p>
@@ -40,32 +40,18 @@
           <br/>
           The Organizing Committee (in alphabetical order):
           <br/>
-          Abdullah Khalid
+          Taylor Cameron
+          <br/>
+          Pamela Freeman
+          <br/>
+          Ayush Mandwal
           <br/>
           Anna Ordog
           <br/>
-          Mehrnoosh Tahani
+          Kyle Reiter
           <br/>
-          Elizabeth Watt
+          Mohammad Hassan Yaghoubi
         </p>
-      </div>
-    </div>
-  </div>
-<hr/>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-       <h3>Undergraduate funding opportunity</h3>
-       <p>
-        The Physics and Astronomy Students' Association (PASA) is proud to announce funding support for any undergraduate who wishes to present a poster at the PHAS Symposium. Posters will be partially or fully reimbursed by PASA, depending on the number of entrants and cost of the poster.
-       </p>
-       <p>
-        The application deadline is Friday, March 3, 2017. Reimbursements will be distributed the following week. Applications can be submitted by email or in person to a PASA executive, and must include both the poster receipt and some proof of symposium acceptance.
-       </p>
-       <p>
-        For more information or to submit an application, email adavalos@ucalgary.ca or physastr@ucalgary.ca. You can also drop in to our club room at ST 058/060 to talk with a friendly exec!
-       </p>
       </div>
     </div>
   </div>
@@ -84,11 +70,11 @@
           <%= f.label :presentation_type, class: 'col-sm-2 control-label required' %>
           <div class="col-sm-10">
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "oral", disabled: true) %>
+              <%= f.radio_button(:presentation_type, "oral", disabled: false) %>
               oral
             </label>
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "poster", disabled: true) %>
+              <%= f.radio_button(:presentation_type, "poster", disabled: false) %>
               poster
             </label>
             <label class="checkbox-inline">
@@ -212,7 +198,7 @@
 <hr/>
 <div class="container">
   <div class="row">
-    <p>Please contact <%= link_to "akhali@ucalgary.ca", "mailto:akhali@ucalgary.ca" %> if you have any questions about the form.</p>
+    <p>Please contact <%= link_to "kyle.reiter1@ucalgary.ca", "mailto:kyle.reiter1@ucalgary.ca" %> if you have any questions about the form.</p>
   </div>
 </div>
 

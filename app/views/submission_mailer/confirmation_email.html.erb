@@ -8,7 +8,7 @@
       Hi <%= @submission.name %>,
     </p>
     <p>
-      Thank you for registering for the PHAS Symposium 2017. We have recorded the following information.
+      Thank you for registering for the PHAS Symposium 2018. We have recorded the following information.
     </p>
     <% if @submission.presentation_type != "attender" %>
       <p>
@@ -27,28 +27,21 @@
       </p>
     <% end%>
 
-    <% if @submission.attender_type != "undergrad" %>
       <p>
         Please submit the $5 registration fee to one of the following people:
        <ul>
-         <li>Abdullah Khalid (SB306)</li>
+         <li>Kyle Reiter (SB 536)</li>
          <li>Anna Ordog (SB 628C)</li>
-         <li>Elizabeth Watt (TBCC CCB17)</li>
-         <li>Mehrnoosh Tahani (SB 538B)</li>
+         <li>Pamela Freeman (SB 512)</li>
        </ul>
       </p>
-    <% else %>
-      <p>
-        You are an undergraduate. Your registration is free.
-      </p>
-    <% end %>
 
     <p>
       A detailed schedule will be provided closer to the date of the symposium.
     </p>
 
     <p>
-      If you have any questions or concerns please contact <%= link_to 'Anna (aordog@ucalgary.ca)', 'mailto:f.mivehvar@ucalgary.ca' %>, or <%= link_to 'Elizabeth (erwatt@ucalgary.ca)', 'mailto:erwatt@ucalgary.ca' %>
+      If you have any questions or concerns please contact <%= link_to 'Anna (aordog@ucalgary.ca)', 'mailto:f.mivehvar@ucalgary.ca' %>, or <%= link_to 'Kyle (kyle.reiter1@ucalgary.ca)', 'mailto:kyle.reiter1@ucalgary.ca' %>
     </p>
 
     <p>

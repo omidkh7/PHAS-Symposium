@@ -70,11 +70,11 @@
           <%= f.label :presentation_type, class: 'col-sm-2 control-label required' %>
           <div class="col-sm-10">
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "oral", disabled: true) %>
+              <%= f.radio_button(:presentation_type, "oral", disabled: false) %>
               oral
             </label>
             <label class="checkbox-inline">
-              <%= f.radio_button(:presentation_type, "poster", disabled: true) %>
+              <%= f.radio_button(:presentation_type, "poster", disabled: false) %>
               poster
             </label>
             <label class="checkbox-inline">

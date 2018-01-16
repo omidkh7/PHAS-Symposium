@@ -6,8 +6,8 @@ class SubmissionMailer < ApplicationMailer
 
     mail(
       to: @submission.email,
-      subject: 'PHAS Symposium 2017 Registration Confirmation',
-      bcc: ['akhali@ucalgary.ca'],
+      subject: 'PHAS Symposium 2018 Registration Confirmation',
+      bcc: ['phasdga@gmail.com'],
     )
   end
 end

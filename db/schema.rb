@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(version: 20150914202853) do
     t.text     "dietary_restrictions"
     t.datetime "created_at",                               null: false
     t.datetime "updated_at",                               null: false
+    t.boolean  "will_attend_social_event", default: false
     t.string   "attender_type"
     t.string   "sub_department"
-    t.boolean  "will_attend_social_event", default: false
     t.string   "co_authors"
   end
 

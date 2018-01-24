@@ -1,7 +1,7 @@
 var submission = (function($) {
 
   var init = function() {
-    initSelectOnlyAttender();
+    //initSelectOnlyAttender();
     initToggleStates();
     initRequirementToggle();
   };
